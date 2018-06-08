@@ -10,8 +10,8 @@ def initialize(options)
   @title = options['title']
   @description = options['description']
   @teacher = options['teacher']
-  @cost = ['cost']
-  @duration = ['duration']
+  @cost = options['cost'].to_i
+  @duration = options['duration'].to_i
 end
 
 #Create a new class for the gym

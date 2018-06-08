@@ -14,3 +14,6 @@ member3 = Member.new({'first_name' => 'Louise', 'last_name' => 'Reekie', 'member
 member3.save()
 member4 = Member.new({'first_name' => 'Christy', 'last_name' => 'Whyte', 'membership_type' => 'Basic', 'date_of_birth' => '21-01-1975'})
 member4.save()
+
+gymclass1 = GymClass.new({'title' => 'Boxing', 'description' => 'Great way to get a workout in and learn some skills at the same time! Bag and pad work along with general conditioning and core strengthening.', 'teacher' => 'Meg Smith', 'cost' => '5', 'duration' => '60'})
+gymclass1.save()
