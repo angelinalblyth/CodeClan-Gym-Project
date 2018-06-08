@@ -1,3 +1,5 @@
+require_relative( '../db/sql_runner' )
+
 class Member
 
   attr_reader :id
@@ -52,7 +54,5 @@ class Member
     values = [id]
     SqlRunner.run(sql, values)
   end
-
-
 
 end
