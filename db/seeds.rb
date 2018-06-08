@@ -23,3 +23,9 @@ gymclass3 = GymClass.new({'title' => 'Kettlebells', 'description' => 'Focusing o
 gymclass3.save()
 gymclass4 = GymClass.new({'title' => 'Strength and Conditioning', 'description' => 'Our Strength & Conditioning class is designed to help you develop your overall muscular strength and power. Whether you want to lose fat or build muscle working incorporating some strength work into your training can help you reach your goals! ', 'teacher' => 'Meg Smith', 'cost' => '7', 'duration' => '60'})
 gymclass4.save()
+
+booking1 = Booking.new({'member_id' => member1.id, 'gym_class_id' => gymclass3.id})
+booking1.save()
+
+binding.pry
+nil
