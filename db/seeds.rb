@@ -4,6 +4,8 @@ require_relative("../models/member.rb")
 require_relative("../models/gym_class.rb")
 require_relative("../models/booking.rb")
 
+Member.delete_all()
+
 member1 = Member.new({'first_name' => 'Angelina', 'last_name' => 'Blyth', 'membership_type' => 'Basic', 'date_of_birth' => '17-04-1990'})
 member1.save()
 member2 = Member.new({'first_name' => 'Grant', 'last_name' => 'McPhilemy', 'membership_type' => 'Basic', 'date_of_birth' => '24-09-1992'})
