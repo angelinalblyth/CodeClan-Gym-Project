@@ -1,8 +1,8 @@
 <h1>Members Page</h1>
 
-<p>
-  <a href="/members/new">New Member</a>
-</p>
+<form method ="get" action="/members/new">
+  <input type="submit" value="New Member"/>
+</form>
 
 <% for member in @members %>
 <p>First Name: <%= member.first_name %></p>
