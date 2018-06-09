@@ -1,9 +1,18 @@
 <h1>Classes Page</h1>
 
+<form method ="get" action="/gym_class/new">
+  <input type="submit" value="New Class"/>
+</form>
+
 <% for gymclass in @gym_classes %>
 <p>Title: <%= gymclass.title %></p>
 <p>Description: <%= gymclass.description %></p>
 <p>Teacher: <%= gymclass.teacher %></p>
 <p>Cost: £<%= gymclass.cost %></p>
 <p>Duration: <%= gymclass.duration %> mins</p>
+
+<form action="/gym_classes/<%= gymclass.id%>">
+  <input type="submit" value="View Class Info"/>
+</form>
+
 <% end %>

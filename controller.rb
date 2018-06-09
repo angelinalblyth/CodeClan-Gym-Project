@@ -11,6 +11,9 @@ get '/' do # dashboard
   erb(:home)
 end
 
+
+### All Member functions
+
 get '/members' do # members index
   @members = Member.all()
   erb (:members)
@@ -47,11 +50,16 @@ post '/members/:id/delete' do # delete
   redirect to '/members'
 end
 
-
+### All Gym Class functions
 
 get '/gym_classes' do
   @gym_classes = GymClass.all()
   erb (:gym_class)
+end
+
+get '/gym_classes/new' do # create new class
+  @gym_classes = GymClass.all()
+  erb(:new_gym_class)
 end
 
 get '/gym_classes/:id' do
