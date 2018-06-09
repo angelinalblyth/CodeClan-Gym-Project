@@ -9,7 +9,9 @@
 <p>Last Name: <%= member.last_name %></p>
 <p>Membership Type: <%= member.membership_type %></p>
 <p>Date of Birth: <%= member.date_of_birth %></p>
-<p>
-  <a href="/members/<%= member.id%>">Show Member Profile</a>
-</p>
+
+
+<form action="/members/<%= member.id%>">
+  <input type="submit" value="View Member"/>
+</form>
 <% end %>
