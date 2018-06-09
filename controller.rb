@@ -62,7 +62,7 @@ get '/gym_classes/new' do # create new class
   erb(:new_gym_class)
 end
 
-get '/gym_classes/:id' do
+get '/gym_classes/:id' do # show class
   @gym_class = GymClass.find(params[:id])
   erb(:show_gym_class)
 end
@@ -70,6 +70,16 @@ end
 post '/gym_classes' do # create
   GymClass.new(params).save
   redirect to '/gym_classes'
+end
+
+get '/gym_classes/:id/edit' do # edit
+  @gym_class = GymClass.find(params[:id])
+  erb(:edit_class)
+end
+
+post '/gym_classes/:id' do #update
+  GymClass.new(params).update
+  redirect to "/gym_classes/#{params['id']}"
 end
 
 post '/gym_classes/:id/delete' do # delete
