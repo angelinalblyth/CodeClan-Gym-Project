@@ -1,8 +1,15 @@
 <h1>Members Page</h1>
 
+<p>
+  <a href="/members/new">New Member</a>
+</p>
+
 <% for member in @members %>
 <p>First Name: <%= member.first_name %></p>
 <p>Last Name: <%= member.last_name %></p>
 <p>Membership Type: <%= member.membership_type %></p>
 <p>Date of Birth: <%= member.date_of_birth %></p>
+<p>
+  <a href="/members/<%= member.id%>">Show Member Profile</a>
+</p>
 <% end %>

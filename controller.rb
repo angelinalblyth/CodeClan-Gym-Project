@@ -17,7 +17,7 @@ get '/members' do
 end
 
 get '/members/new' do
-  @members = Members.all()
+  @members = Member.all()
   erb(:new_member)
 end
 
