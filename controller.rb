@@ -16,7 +16,17 @@ get '/members' do
   erb (:members)
 end
 
+get '/members/:id' do
+  @member = Member.find(params[:id])
+  erb(:show_member)
+end
+
 get '/gym_classes' do
   @gym_classes = GymClass.all()
   erb (:gym_class)
+end
+
+get '/gym_classes/:id' do
+  @gym_class = GymClass.find(params[:id])
+  erb(:show_gym_class)
 end
