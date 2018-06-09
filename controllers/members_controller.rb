@@ -1,18 +1,24 @@
+
+require( 'sinatra' )
+require( 'sinatra/contrib/all' )
+require_relative( '../models/member.rb' )
+also_reload( '../models/*' )
+
 ### All Member functions
 
 get '/members' do # members index
   @members = Member.all()
-  erb (:members)
+  erb (:"member/index")
 end
 
 get '/members/new' do # new member
   @members = Member.all()
-  erb(:new_member)
+  erb(:"member/new")
 end
 
 get '/members/:id' do #show individual member
   @member = Member.find(params[:id])
-  erb(:show_member)
+  erb(:"member/show")
 end
 
 post '/members' do # create
@@ -22,7 +28,7 @@ end
 
 get '/members/:id/edit' do # edit
   @member = Member.find(params[:id])
-  erb(:edit_member)
+  erb(:"member/edit")
 end
 
 post '/members/:id' do #update
