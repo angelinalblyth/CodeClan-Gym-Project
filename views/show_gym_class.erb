@@ -11,18 +11,19 @@
   edit/update
 </p>
 
-<p>
-  delete
-</p>
+<form  action="/gym_classes/<%= @gym_class.id %>/edit">
+  <input type="submit" value="Edit Class"/>
+</form>
 
 <form method="post" action="/gym_classes/<%= @gym_class.id %>/delete">
   <input type="submit" value="Delete Class"/>
 </form>
 
-<p>
-  show all members who have booked this class
-</p>
+<!-- unsure if I will make 2 seperate files for both members and classes for this, or should they call on the same erb file to both book and view. -->
+<form  action="/gym_classes/<%= @gym_class.id %>/view_members">
+  <input type="submit" value="View Members"/>
+</form>
 
-<p>
-  book a member onto the class
-</p>
+<form  action="/gym_classes/<%= @gym_class.id %>/book_class">
+  <input type="submit" value="Book Class"/>
+</form>
