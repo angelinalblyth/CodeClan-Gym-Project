@@ -66,3 +66,8 @@ get '/gym_classes/:id' do
   @gym_class = GymClass.find(params[:id])
   erb(:show_gym_class)
 end
+
+post '/gym_classes' do # create
+  GymClass.new(params).save
+  redirect to '/gym_classes'
+end
