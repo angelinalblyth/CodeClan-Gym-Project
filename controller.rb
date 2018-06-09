@@ -71,3 +71,9 @@ post '/gym_classes' do # create
   GymClass.new(params).save
   redirect to '/gym_classes'
 end
+
+post '/gym_classes/:id/delete' do # delete
+  GymClass.delete( params[:id])
+  # member.delete()
+  redirect to '/gym_classes'
+end

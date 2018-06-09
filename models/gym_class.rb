@@ -50,7 +50,7 @@ end
   end
 
   #Can delete a class that is perhaps no longer available
-  def delete(id)
+  def self.delete(id)
     sql = "DELETE FROM gym_classes WHERE id = $1"
     values = [id]
     SqlRunner.run(sql, values)
