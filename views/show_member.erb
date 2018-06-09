@@ -6,6 +6,8 @@
 <p>Membership Type: <%= @member.membership_type %></p>
 <p>Date of Birth: <%= @member.date_of_birth %></p>
 
+
+
 <a href="/members/<%= @member.id%>/edit">Edit Details</a>
 
 <form method="post" action="/members/<%= @member.id %>/delete">
