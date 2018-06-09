@@ -15,6 +15,10 @@
   <input type="submit" value="Delete User"/>
 </form>
 
-<a href="/members/<%= @member.id%>/booked_classes">Show Members Booked Classes</a>
+<form  action="/members/<%= @member.id %>/view_classes">
+  <input type="submit" value="View Classes"/>
+</form>
 
-<a href="/members/<%= @member.id%>/book_class">Book Member on a Class</a>
+<form  action="/members/<%= @member.id %>/book_class">
+  <input type="submit" value="Book Class"/>
+</form>
