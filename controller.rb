@@ -31,6 +31,16 @@ post '/members' do
   redirect to '/members'
 end
 
+get '/members/:id/edit' do
+  @member = Member.find(params['id'])
+  erb(:edit_member)
+end
+
+post '/members/:id' do
+  member = Member.new(params)
+  member.update
+  redirect to "/members/#{params['id']}"
+end
 
 
 
