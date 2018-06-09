@@ -50,7 +50,7 @@ class Member
   end
 
   #Can delete a member from the gym, wont probably be used.
-  def delete(id)
+  def self.delete(id)
     sql = "DELETE FROM members WHERE id = $1"
     values = [id]
     SqlRunner.run(sql, values)

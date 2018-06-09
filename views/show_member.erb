@@ -8,7 +8,9 @@
 
 <a href="/members/<%= @member.id%>/edit">Edit Details</a>
 
-<a href="/members/<%= @member.id%>/delete">Delete Member</a>
+<form method="post" action="/members/<%= @member.id %>/delete">
+  <input type="submit" value="Delete Order"/>
+</form>
 
 <a href="/members/<%= @member.id%>/booked_classes">Show Members Booked Classes</a>
 
