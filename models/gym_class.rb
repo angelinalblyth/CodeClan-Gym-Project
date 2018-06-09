@@ -14,7 +14,7 @@ def initialize(options)
   @duration = options['duration'].to_i
 end
 
-#Create a new class for the gym
+  #Create a new class for the gym
   def save()
     sql = "INSERT INTO gym_classes(title, description, teacher, cost, duration) VALUES ($1, $2, $3, $4, $5) RETURNING id"
     values = [@title, @description, @teacher, @cost, @duration]
@@ -56,5 +56,12 @@ end
     SqlRunner.run(sql, values)
   end
 
+  #Method to return all members booked into a class
+  def members()
+    sql = "SELECT * FROM gym_classes INNER JOIN bookings ON bookings.gym_class_id = gym_classes.id INNER JOIN members ON bookings.member_id = members.id WHERE gym_classes.id = $1"
+    values = [@id]
+    results = SqlRunner.run(sql, values)
+    return results.map { |member| Member.new(member)}
+  end
 
 end
