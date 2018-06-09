@@ -16,10 +16,23 @@ get '/members' do
   erb (:members)
 end
 
+get '/members/new' do
+  @members = Members.all()
+  erb(:new_member)
+end
+
 get '/members/:id' do
   @member = Member.find(params[:id])
   erb(:show_member)
 end
+
+post '/members' do
+  Member.new(params).save
+  redirect to '/members'
+end
+
+
+
 
 get '/gym_classes' do
   @gym_classes = GymClass.all()
