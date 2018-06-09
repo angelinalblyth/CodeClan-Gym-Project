@@ -1,0 +1,9 @@
+<h1>Classes Page</h1>
+
+<% for gymclass in @gym_classes %>
+<p>Title: <%= gymclass.title %></p>
+<p>Description: <%= gymclass.description %></p>
+<p>Teacher: <%= gymclass.teacher %></p>
+<p>Cost: £<%= gymclass.cost %></p>
+<p>Duration: £<%= gymclass.duration %></p>
+<% end %>
