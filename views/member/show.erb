@@ -4,7 +4,6 @@
 <p>First Name: <%= @member.first_name %></p>
 <p>Last Name: <%= @member.last_name %></p>
 <p>Membership Type: <%= @member.membership_type %></p>
-<p>Date of Birth: <%= @member.date_of_birth %></p>
 
 
 <form  action="/members/<%= @member.id %>/edit">
@@ -19,6 +18,6 @@
   <input type="submit" value="View Classes"/>
 </form>
 
-<form  action="/members/<%= @member.id %>/book_class">
+<form  action="/booking/<%= @member.id %>/book_class">
   <input type="submit" value="Book Class"/>
 </form>

@@ -10,13 +10,12 @@ class Member
     @first_name = options['first_name']
     @last_name = options['last_name']
     @membership_type = options['membership_type']
-    @date_of_birth = options['date_of_birth']
   end
 
 #Create a new member of the gym
   def save()
-    sql = "INSERT INTO members(first_name, last_name, membership_type, date_of_birth) VALUES ($1, $2, $3, $4) RETURNING id"
-    values = [@first_name, @last_name, @membership_type, @date_of_birth]
+    sql = "INSERT INTO members(first_name, last_name, membership_type) VALUES ($1, $2, $3) RETURNING id"
+    values = [@first_name, @last_name, @membership_type]
     results = SqlRunner.run(sql, values)
     @id = results.first()['id'].to_i
   end
@@ -39,8 +38,8 @@ class Member
 
   #Update details about a member
   def update()
-    sql = "UPDATE members SET (first_name, last_name, membership_type, date_of_birth) = ($1, $2, $3, $4) WHERE id = $5"
-    values = [@first_name, @last_name, @membership_type, @date_of_birth, @id]
+    sql = "UPDATE members SET (first_name, last_name, membership_type) = ($1, $2, $3) WHERE id = $4"
+    values = [@first_name, @last_name, @membership_type, @id]
     SqlRunner.run(sql, values)
   end
 

@@ -12,9 +12,6 @@
     <option value ="Premium" <%= "selected" if @member.membership_type == "Premium" %>>Premium</option>
   </select>
 
-  <label for="date_of_birth">Please enter your Age:</label>
-  <input type="number" name ="date_of_birth" id="date_of_birth" value ="<%= @member.date_of_birth %>"/>
-
   <input type="submit" value ="Edit Member" />
 
 </form>
