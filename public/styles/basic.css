@@ -10,7 +10,7 @@ body{
   /* color: #2ABB9C; Green colour*/
 }
 
-nav {
+/* nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -27,4 +27,55 @@ ul{
 a {
   text-decoration:none;
   color: white;
+} */
+
+#menu
+{
+
+  width:100%;
+  direction:rtl;
+  font-size:1.8em;
+    white-space:nowrap;
+
+}
+
+#menu .logo
+{
+  position: absolute;
+display:inline-block;
+  float: left;
+  left: 5px;
+}
+
+#menu ul
+{
+  display:inline-block;
+  width:60%;
+  font-size:0;
+
+  min-width:450px;
+}
+
+#menu li
+{
+ white-space:nowrap;
+ padding:10px 0;
+ display:inline-block;
+ width:20%;
+ font-size:30px;
+
+}
+#menu li a
+{
+  transition:all 0.3s;
+  padding-bottom:8px;
+  cursor:pointer;
+  color: white;
+  text-decoration: none;
+}
+
+#menu li a:hover
+{
+  color:#2ABB9C;
+
 }
