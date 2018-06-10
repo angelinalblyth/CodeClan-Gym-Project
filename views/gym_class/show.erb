@@ -16,10 +16,10 @@
 </form>
 
 <!-- unsure if I will make 2 seperate files for both members and classes for this, or should they call on the same erb file to both book and view. -->
-<form  action="/gym_classes/<%= @gym_class.id %>/view_members">
+<form  action="/gym_classes/<%= @gym_class.id %>/bookings">
   <input type="submit" value="View Members"/>
 </form>
 
 <form  action="/gym_classes/<%= @gym_class.id %>/book_class">
-  <input type="submit" value="Book Class"/>
+  <input type="submit" value="Book Member"/>
 </form>

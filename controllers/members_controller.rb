@@ -40,3 +40,12 @@ post '/members/:id/delete' do # delete
   # member.delete()
   redirect to '/members'
 end
+
+### Booking views
+
+
+get '/members/:id/bookings' do
+  @members = Member.find(params[:id])
+  @gym_classes = @members.booked_classes()
+  erb ( :"member/bookings")
+end
