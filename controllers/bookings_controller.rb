@@ -13,9 +13,3 @@ get '/booking' do # table of bookings
   @bookings = Booking.all()
   erb (:"booking/index")
 end
-
-get 'booking/new' do #make a new booking
-  @members = Member.all
-  @gym_classes = Gymclass.all
-  erb(:'booking/new')
-end
