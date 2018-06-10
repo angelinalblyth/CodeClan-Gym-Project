@@ -45,7 +45,7 @@ def member()
 end
 
 def gym_class()
-  sql = "SELECT * FROM gym_classes WHERE id = $1 SORT BY title DESC"
+  sql = "SELECT * FROM gym_classes WHERE id = $1"
   values = [@gym_class_id]
   results = SqlRunner.run(sql, values)
   return GymClass.new(results.first)
