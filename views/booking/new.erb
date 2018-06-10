@@ -1,10 +1,10 @@
 <h1>Hello</h1>
 
 
-<form action="/gym_classes/#{params['id']}/bookings" method="post">
+<form action="/gym_classes/<% @gym_class_id %>/bookings" method="post">
   <label>
   Select a member:
-    <select first_name="member.id">
+    <select name="member_id">
       <% for member in @members %>
       <option value="<%= member.id %>"><%= member.first_name %></option>
       <% end %>

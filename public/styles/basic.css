@@ -1,0 +1,14 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #262F38;
+  color: white;
+  /* color: #2ABB9C; Green colour*/
+}
+
+nav {
+  padding: 0px;
+  margin: 0px;
+  padding-right: 25px;
+  display: inline;
+}
