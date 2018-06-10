@@ -21,7 +21,15 @@ get '/gym_classes/:id/bookings' do
 end
 
 get '/gym_classes/:id/book_class' do
+  @members = Member.all
+  @gym_classes = GymClass.all
+  erb(:"booking/new")
+end
 
+post '/gym_class/:id/bookings' do
+  booking = Booking.new(params)
+  booking.save
+  redirect to("/gym_class/:id/bookings")
 end
 
 
