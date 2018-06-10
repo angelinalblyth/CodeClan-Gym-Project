@@ -1,0 +1,48 @@
+.main-container {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.main-container  > div {
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  justify-content: center;
+  flex-direction: column;
+}
+.main-container  > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box { margin: 20px; }
+/* .classes {
+background-image: url("boxing.jpg");
+}
+.members {
+background-color: orange;
+} */
+
+.home-image {
+  width: 100px;
+  height: 100px;
+}
+
+.responsive{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+button {
+  background-color: #2ABB9C;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
