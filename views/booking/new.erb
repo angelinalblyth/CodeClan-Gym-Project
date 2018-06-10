@@ -1,7 +1,7 @@
 <h1>Hello</h1>
 
 
-<form action="/gym_class/:gym_class_id/bookings" method="post">
+<form action="/gym_classes/#{params['id']}/bookings" method="post">
   <label>
   Select a member:
     <select first_name="member.id">
@@ -15,3 +15,7 @@
 
   <input type='submit' value="Add to class">
 </form>
+
+<!-- gym_class/:gym_class_id/bookings -->
+
+<!-- /gym_class/#{params['id']}/bookings -->

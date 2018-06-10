@@ -26,10 +26,10 @@ get '/gym_classes/:id/book_class' do
   erb(:"booking/new")
 end
 
-post '/gym_class/:gym_class_id/bookings' do
+post '/gym_classes/:gym_class_id/bookings' do
   booking = Booking.new(params)
   booking.save
-  redirect to "/gym_class/#{params['id']}/bookings"
+  redirect to "/gym_classes/#{params['id']}/bookings"
 end
 
 
