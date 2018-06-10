@@ -4,15 +4,48 @@
   <input type="submit" value="New Class"/>
 </form>
 
-<% for gymclass in @gym_classes %>
-<p>Title: <%= gymclass.title %></p>
-<p>Description: <%= gymclass.description %></p>
-<p>Teacher: <%= gymclass.teacher %></p>
-<p>Cost: £<%= gymclass.cost %></p>
-<p>Duration: <%= gymclass.duration %> mins</p>
 
-<form action="/gym_classes/<%= gymclass.id%>">
-  <input type="submit" value="View Class Info"/>
-</form>
+<table>
+  <tr>
+    <th>
+      Title
+    </th>
+    <th>
+      Description
+    </th>
+    <th>
+      Teacher
+    </th>
+    <th>
+      Cost
+    </th>
+    <th>
+      Duration
+    </th>
+  </tr>
+  <% for gymclass in @gym_classes %>
+  <tr>
+    <td>
+      <%= gymclass.title %>
+    </td>
+    <td>
+      <%= gymclass.description %>
+    </td>
+    <td>
+      <%= gymclass.teacher %>
+    </td>
+    <td>
+      £<%= gymclass.cost %>
+    </td>
+    <td>
+      <%= gymclass.duration %> mins
+    </td>
+  </tr>
+  <td>
+    <form action="/gym_classes/<%= gymclass.id%>">
+      <input type="submit" value="View Class Info"/>
+    </form>
+  </td>
 
-<% end %>
+  <% end %>
+</table>
