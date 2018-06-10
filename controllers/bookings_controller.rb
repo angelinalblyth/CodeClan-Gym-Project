@@ -22,14 +22,14 @@ end
 
 get '/gym_classes/:id/book_class' do
   @members = Member.all
-  @gym_classes = GymClass.all
+  @gym_class = GymClass.find(params[:id])
   erb(:"booking/new")
 end
 
-post '/gym_class/:id/bookings' do
+post '/gym_class/:gym_class_id/bookings' do
   booking = Booking.new(params)
   booking.save
-  redirect to("/gym_class/:id/bookings")
+  redirect to("/gym_class/" + params[:id] + "/bookings")
 end
 
 
