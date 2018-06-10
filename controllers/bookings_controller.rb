@@ -29,7 +29,7 @@ end
 post '/gym_class/:gym_class_id/bookings' do
   booking = Booking.new(params)
   booking.save
-  redirect to("/gym_class/" + params[:id] + "/bookings")
+  redirect to "/gym_class/#{params['id']}/bookings"
 end
 
 
