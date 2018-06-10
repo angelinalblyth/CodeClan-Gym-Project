@@ -56,13 +56,6 @@ class Member
   end
 
   # #Method to return all classes that member is signed up for
-  # def booked_classes()
-  #   sql = "SELECT members.* FROM members INNER JOIN bookings ON bookings.member_id = members.id INNER JOIN gym_classes ON bookings.gym_class_id = gym_classes.id WHERE members.id = $1"
-  #   values = [@id]
-  #   results = SqlRunner.run(sql, values)
-  #   return results.map { |gym_class| GymClass.new(gym_class)}
-  # end
-
 
   def booked_classes()
     sql = "SELECT gym_classes.* FROM gym_classes INNER JOIN bookings ON bookings.gym_class_id = gym_classes.id INNER JOIN members ON bookings.member_id = members.id WHERE members.id = $1"

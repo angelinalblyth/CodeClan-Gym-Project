@@ -4,13 +4,23 @@
   <input type="submit" value="New Member"/>
 </form>
 
-<% for member in @members %>
-<p>First Name: <%= member.first_name %></p>
-<p>Last Name: <%= member.last_name %></p>
-<p>Membership Type: <%= member.membership_type %></p>
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Membership Type</th>
+  </tr>
+  <% for member in @members %>
+  <tr>
+    <td><%= member.first_name %></td>
+    <td><%= member.last_name %></td>
+    <td><%= member.membership_type %></td>
+  </tr>
+  <td>
+    <form action="/members/<%= member.id%>">
+      <input type="submit" value="View Member"/>
+    </form>
+  </td>
 
-
-<form action="/members/<%= member.id%>">
-  <input type="submit" value="View Member"/>
-</form>
-<% end %>
+  <% end %>
+</table>

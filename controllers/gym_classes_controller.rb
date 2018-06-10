@@ -50,3 +50,8 @@ get '/gym_classes/:id/bookings' do
   @members = @gym_class.members()
   erb ( :"gym_class/bookings")
 end
+
+
+get '/gym_classes/:id/book_class' do
+  
+end
