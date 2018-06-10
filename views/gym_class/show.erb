@@ -1,11 +1,23 @@
 <h1>Class</h1>
 
 
-<p>Title: <%= @gym_class.title %></p>
-<p>Description: <%= @gym_class.description %></p>
-<p>Teacher: <%= @gym_class.teacher %></p>
-<p>Cost: £<%= @gym_class.cost %></p>
-<p>Duration: <%= @gym_class.duration %></p>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Teacher</th>
+    <th>Cost</th>
+    <th>Duration</th>
+  </tr>
+
+  <tr>
+    <td><%= @gym_class.title %></td>
+    <td><%= @gym_class.description %></td>
+    <td><%= @gym_class.teacher %></td>
+    <td>£<%= @gym_class.cost %></td>
+    <td><%= @gym_class.duration %> mins</td>
+  </tr>
+</table>
 
 <form  action="/gym_classes/<%= @gym_class.id %>/edit">
   <input type="submit" value="Edit Class"/>
