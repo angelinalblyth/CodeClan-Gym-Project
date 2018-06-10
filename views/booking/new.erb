@@ -4,10 +4,10 @@
 <form action="/gym_class/:id/bookings" method="post">
   <label>
   Select a member:
-    <select first_name="member.id">
-      <% for member in @members %>
-      <option value="<%= {'member_id' => member.id, 'gym_class_id' => #{params('id')}} %>"><%= member.first_name %></option>
-      <% end %>
+    <select first_name= "member.id">
+      <% @members.each do |member| %>
+                <option value=<%= member.id %>><%= member.first_name %></option>
+            <% end %>
     </select>
   </label>
 
