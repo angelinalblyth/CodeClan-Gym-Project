@@ -17,13 +17,9 @@
   flex-direction: row;
 }
 
-.box { margin: 20px; }
-/* .classes {
-background-image: url("boxing.jpg");
+.box {
+  margin: 20px;
 }
-.members {
-background-color: orange;
-} */
 
 .home-image {
   width: 100px;
@@ -37,6 +33,7 @@ background-color: orange;
 }
 
 button {
+  position: right;
   background-color: #2ABB9C;
   border: none;
   color: white;
