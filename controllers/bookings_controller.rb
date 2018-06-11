@@ -38,3 +38,9 @@ get '/members/:id/bookings' do
   @gym_classes = @members.booked_classes()
   erb ( :"member/bookings")
 end
+
+post '/members/:member_id/bookings' do
+  booking = Booking.new(params)
+  booking.save
+  redirect to "/members/#{params['member_id']}/bookings"
+end
