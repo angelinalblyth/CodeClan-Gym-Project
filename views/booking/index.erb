@@ -1,18 +1,32 @@
 <h1>All Bookings</h1>
 
-<form method ="get" action="/booking/new">
+<form class="button-forms" method ="get" action="/booking/new">
   <input type="submit" value="New Booking"/>
 </form>
 
-<ul>
-  <% for booking in @bookings %>
-  <li>
-  <p><%= booking.member.first_name %> <%= booking.gym_class.title %> </p>
-    <p>
-      <form action="/booking/<%= booking.id %>/delete" method="POST">
-        <input class="btn btn--danger" type="submit" value="delete" />
-      </form>
-    </p>
-  </li>
-  <% end %>
-</ul>
+<table>
+
+<tr>
+  <th>
+    Member
+  </th>
+  <th>
+    Class
+  </th>
+</tr>
+<% for booking in @bookings %>
+<tr>
+  <td>
+    <%= booking.member.first_name %>
+  </td>
+  <td>
+    <%= booking.gym_class.title %>
+  </td>
+</tr>
+<td>
+  <form action="/booking/<%= booking.id %>/delete" method="POST">
+    <input class="btn btn--danger" type="submit" value="delete" />
+  </form>
+</td>
+<% end %>
+</table>

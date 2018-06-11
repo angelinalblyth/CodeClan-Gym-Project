@@ -1,25 +1,29 @@
-<h1>Members Page</h1>
 
-<form class="button-forms" method ="get" action="/members/new">
-  <input type="submit" value="New Member"/>
-</form>
+<div>
+  <h1>Members Page</h1>
 
-<table>
-  <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Membership Type</th>
-  </tr>
-  <% for member in @members %>
-  <tr>
-    <td><%= member.first_name %></td>
-    <td><%= member.last_name %></td>
-    <td><%= member.membership_type %></td>
-    <td><form action="/members/<%= member.id%>">
-      <input type="submit" value="View Member"/>
-    </form></td>
-  </tr>
+  <form class="button-forms" method ="get" action="/members/new">
+    <input type="submit" value="New Member"/>
+  </form>
+
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Membership Type</th>
+    </tr>
+    <% for member in @members %>
+    <tr>
+      <td><%= member.first_name %></td>
+      <td><%= member.last_name %></td>
+      <td><%= member.membership_type %></td>
+      <td><form action="/members/<%= member.id%>">
+        <input type="submit" value="View Member"/>
+      </form></td>
+    </tr>
 
 
-  <% end %>
-</table>
+    <% end %>
+  </table>
+
+</div>

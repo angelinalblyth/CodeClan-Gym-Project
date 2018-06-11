@@ -1,33 +1,37 @@
-<h1>Classes Page</h1>
+<div>
+  <h1>Classes Page</h1>
 
-<form method ="get" action="/gym_classes/new">
-  <input type="submit" value="New Class"/>
-</form>
+  <form class="button-forms" method ="get" action="/gym_classes/new">
+    <input type="submit" value="New Class"/>
+  </form>
 
 
-<table>
-  <tr>
-    <th>
-      Title
-    </th>
-    <th>
-      Duration
-    </th>
-  </tr>
-  <% for gymclass in @gym_classes %>
-  <tr>
+  <table>
+    <tr>
+      <th>
+        Title
+      </th>
+      <th>
+        Duration
+      </th>
+    </tr>
+    <% for gymclass in @gym_classes %>
+    <tr>
+      <td>
+        <%= gymclass.title %>
+      </td>
+      <td>
+        <%= gymclass.duration %> mins
+      </td>
+    </tr>
     <td>
-      <%= gymclass.title %>
+      <form action="/gym_classes/<%= gymclass.id%>">
+        <input type="submit" value="View Class Info"/>
+      </form>
     </td>
-    <td>
-      <%= gymclass.duration %> mins
-    </td>
-  </tr>
-  <td>
-    <form action="/gym_classes/<%= gymclass.id%>">
-      <input type="submit" value="View Class Info"/>
-    </form>
-  </td>
 
-  <% end %>
-</table>
+    <% end %>
+  </table>
+
+
+</div>
