@@ -8,3 +8,10 @@ label {
 .new{
   margin-top: 50px;
 }
+
+input{
+  display: inline;
+  width: 250px;
+  background-color:#2ABB9C;
+  color: #262F38
+}

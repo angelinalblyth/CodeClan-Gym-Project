@@ -1,26 +1,33 @@
-<h1>Class</h1>
+<h1><%= @gym_class.title %></h1>
 
 
 <table>
   <tr>
-    <th>Title</th>
     <th>Description</th>
+  </tr>
+
+  <tr>
+    <td><%= @gym_class.description %></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
     <th>Teacher</th>
     <th>Cost</th>
     <th>Duration</th>
   </tr>
-
   <tr>
-    <td><%= @gym_class.title %></td>
-    <td><%= @gym_class.description %></td>
-    <td><%= @gym_class.teacher %></td>
     <td>£<%= @gym_class.cost %></td>
     <td><%= @gym_class.duration %> mins</td>
+    <td><%= @gym_class.teacher %></td>
   </tr>
 </table>
 
+<div>
+
 <form  action="/gym_classes/<%= @gym_class.id %>/edit">
-  <input type="submit" value="Edit Class"/>
+  <input type="submit" value="Edit Class" class="boxing-buttons"/>
 </form>
 
 <form method="post" action="/gym_classes/<%= @gym_class.id %>/delete">
@@ -35,3 +42,5 @@
 <form  action="/gym_classes/<%= @gym_class.id %>/book_class">
   <input type="submit" value="Book Member"/>
 </form>
+
+</div>
