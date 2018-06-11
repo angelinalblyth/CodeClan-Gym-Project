@@ -17,6 +17,10 @@ h1{
   font-size: 5em;
 }
 
+#show-page{
+  text-align:left;
+}
+
 /* Navigation */
 
 .nav-title{
