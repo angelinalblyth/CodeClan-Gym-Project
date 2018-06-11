@@ -5,28 +5,20 @@
 </form>
 
 <table>
+  <tr>
+    <th>Member</th>
+    <th>Class</th>
+  </tr>
+  <% for booking in @bookings %>
+  <tr>
+    <td><%= booking.member.first_name %></td>
+    <td><%= booking.gym_class.title %></td>
+    <td>
+      <form action="/booking/<%= booking.id %>/delete" method="POST">
+        <input type="submit" value="delete" />
+      </form>
+    </td>
+  </tr>
 
-<tr>
-  <th>
-    Member
-  </th>
-  <th>
-    Class
-  </th>
-</tr>
-<% for booking in @bookings %>
-<tr>
-  <td>
-    <%= booking.member.first_name %>
-  </td>
-  <td>
-    <%= booking.gym_class.title %>
-  </td>
-</tr>
-<td>
-  <form action="/booking/<%= booking.id %>/delete" method="POST">
-    <input class="btn btn--danger" type="submit" value="delete" />
-  </form>
-</td>
-<% end %>
+  <% end %>
 </table>

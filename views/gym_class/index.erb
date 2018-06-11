@@ -8,27 +8,19 @@
 
   <table>
     <tr>
-      <th>
-        Title
-      </th>
-      <th>
-        Duration
-      </th>
+      <th>Title</th>
+      <th>Duration</th>
     </tr>
     <% for gymclass in @gym_classes %>
     <tr>
+      <td><%= gymclass.title %></td>
+      <td><%= gymclass.duration %> mins</td>
       <td>
-        <%= gymclass.title %>
-      </td>
-      <td>
-        <%= gymclass.duration %> mins
+        <form action="/gym_classes/<%= gymclass.id%>">
+          <input type="submit" value="View Class Info"/>
+        </form>
       </td>
     </tr>
-    <td>
-      <form action="/gym_classes/<%= gymclass.id%>">
-        <input type="submit" value="View Class Info"/>
-      </form>
-    </td>
 
     <% end %>
   </table>
