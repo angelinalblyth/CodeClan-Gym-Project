@@ -22,7 +22,7 @@ end
 
 get '/gym_classes/:id/book_class' do
   @members = Member.all
-  @gym_class = GymClass.find(params[:id])
+  @gym_class_id = params[:id]
   erb(:"booking/new")
 end
 
