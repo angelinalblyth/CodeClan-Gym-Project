@@ -1,0 +1,10 @@
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+}
+
+.new{
+  margin-top: 50px;
+}
