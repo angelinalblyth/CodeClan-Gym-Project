@@ -9,11 +9,19 @@ body{
   color: white;
 }
 
+
+h1{
+  color: #2ABB9C;
+  text-align:center;
+  text-shadow: 5px 5px black;
+  font-size: 5em;
+}
+
 /* Navigation */
 
 .nav-title{
   position: absolute;
-display:inline-block;
+  display:inline-block;
   float: right;
   right: 5px;
 }
@@ -42,4 +50,37 @@ display:inline-block;
 
 .nav-links li a:hover {
   color:#2ABB9C;
+}
+
+
+/* Boxes */
+
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.container > div {
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  justify-content: center;
+  flex-direction: column;
+}
+.container > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box {
+  margin: 20px;
+}
+
+
+.responsive{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
