@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>CodeClan Gym Portal</title>
-    <link rel="stylesheet" type="text/css" href="/styles/basic.css">
-    <link rel="stylesheet" type="text/css" href="/styles/index_styles.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeClan Gym Portal</title>
+  <link rel="stylesheet" type="text/css" href="/styles/basic.css">
+  <link rel="stylesheet" type="text/css" href="/styles/index_styles.css">
 
-  </head>
-  <body>
-<main>
-    <nav id = "menu">
-      <img src="/images/logo2-300x42.png" class = "logo"/>
-
+</head>
+<body>
+  <main>
+    <div class ="nav">
+      <div class="nav-header">
+        <div class="nav-title">
+          <img src="/images/logo2-300x42.png" class = "logo"/>
+        </div>
+      </div>
+      <div class="nav-links">
       <ul>
         <li>
           <a href="/">Dashboard</a>
@@ -22,16 +27,16 @@
         <li>
           <a href="/gym_classes">Classes</a>
         </li>
-        <!-- <li>
-          <a href="/booking">Bookings</a>
-        </li> -->
-      </ul>
-    </nav>
+    </ul>
+    </div>
+
+
+  </div>
 
 
 
-    <%= yield %>
-  </main>
+  <%= yield %>
+</main>
 
-  </body>
+</body>
 </html>
