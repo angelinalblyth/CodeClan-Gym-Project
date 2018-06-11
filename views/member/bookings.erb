@@ -1,4 +1,27 @@
+<div>
 
-<% for gym_class in @gym_classes %>
-<p><%= gym_class.title() %>
-  <% end %>
+  <p>
+    List of classes <%= @members.first_name %> is booked in for.
+  </p>
+  <table>
+    <tr>
+      <th>
+        Title
+      </th>
+      <th>
+        Time
+      </th>
+    </tr>
+  <% for gym_class in @gym_classes %>
+  <tr>
+    <td>
+      <%= gym_class.title %>
+    </td>
+    <td>
+      FILL
+    </td>
+
+  </tr>
+    <% end %>
+</table>
+</div>
