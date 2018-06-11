@@ -15,12 +15,11 @@
     <td><%= member.first_name %></td>
     <td><%= member.last_name %></td>
     <td><%= member.membership_type %></td>
-  </tr>
-  <td>
-    <form action="/members/<%= member.id%>">
+    <td><form action="/members/<%= member.id%>">
       <input type="submit" value="View Member"/>
-    </form>
-  </td>
+    </form></td>
+  </tr>
+
 
   <% end %>
 </table>
