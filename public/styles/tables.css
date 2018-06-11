@@ -1,9 +1,25 @@
 table {
   border-spacing: 0.5rem;
-  border: solid red 3px;
   margin-left: 2.5%;
+  width: 100%
 }
 
 .button-forms{
   margin: 15px;
+}
+
+.table-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:auto;
+}
+
+th, td {
+    text-align: left;
+}
+
+th{
+  text-decoration: underline;
+  font-size: 1.5em;
 }
