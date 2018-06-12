@@ -21,83 +21,24 @@ h1{
   text-align:left;
 }
 
-/* Navigation */
 
 
+#view_members {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/circuit training.jpg");
+  background-repeat: no-repeat;
+  padding: 50px;
 
-
-.nav-title{
-  position: absolute;
-  display:inline-block;
-  float: right;
-  right: 5px;
 }
 
-.nav-links{
-  width:100%;
-  font-size:1.8em;
-  white-space:nowrap;
+#view_classes {
+
+  background-image: url('images/boxing.jpg');
+
 }
-
-.nav-links li{
-  white-space:nowrap;
-  padding:10px 0;
-  display:inline-block;
-  width:20%;
-  font-size:30px;
-}
-
-.nav-links li a {
-  transition:all 0.3s;
-  padding-bottom:8px;
-  cursor:pointer;
-  color: white;
-  text-decoration: none;
-}
-
-.nav-links li a:hover {
-  color:#2ABB9C;
-}
-
-
-/* Boxes */
-
-.container {
-  min-height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.container > div {
-  display: flex;
-  flex-basis: calc(50% - 40px);
-  justify-content: center;
-  flex-direction: column;
-}
-.container > div > div {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.box {
-  margin: 20px;
-}
-
-
-.responsive{
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
-
-figcaption{
-  color: white;
-  text-decoration: none;
-  text-align: center;
-}
-
-a img{
-  text-decoration: none;
+.image_link {
+  background-color: #000;
+  color: #fff;
 }

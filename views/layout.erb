@@ -4,40 +4,41 @@
   <meta charset="utf-8">
   <title>CodeClan Gym Portal</title>
   <link rel="stylesheet" type="text/css" href="/styles/front-page.css">
-    <link rel="stylesheet" type="text/css" href="/styles/tables.css">
-    <link rel="stylesheet" type="text/css" href="/styles/form.css">
+  <link rel="stylesheet" type="text/css" href="/styles/tables.css">
+  <link rel="stylesheet" type="text/css" href="/styles/form.css">
+  <link rel="stylesheet" type="text/css" href="/styles/navigation.css">
+
 
 </head>
 <body>
   <main>
+    <header class ="site-header">
+      <nav class="site-nav">
+        <ul>
+          <li>
+            <a href="/">Dashboard</a>
+          </li>
+          <li>
+            <a href="/members">Members</a>
+          </li>
+          <li>
+            <a href="/gym_classes">Classes</a>
+          </li>
+        </ul>
+      </nav>
 
-    <div class ="nav">
-      <div class="nav-header">
-        <div class="nav-title">
-          <img src="/images/logo2-300x42.png" class = "logo" alt="Studio Logo"/>
-        </div>
+      <div id="logo">
+        <img src="/images/logo2-300x42.png" class = "logo" alt="Studio Logo"/>
       </div>
-      <div class="nav-links">
-      <ul>
-        <li>
-          <a href="/">Dashboard</a>
-        </li>
-        <li>
-          <a href="/members">Members</a>
-        </li>
-        <li>
-          <a href="/gym_classes">Classes</a>
-        </li>
-    </ul>
-    </div>
-
-
-  </div>
+    </header>
 
 
 
-  <%= yield %>
-</main>
+
+
+
+    <%= yield %>
+  </main>
 
 </body>
 </html>
