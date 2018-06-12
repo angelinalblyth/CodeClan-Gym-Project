@@ -1,22 +1,25 @@
 <h1>Register a new Member to the Gym</h1>
 
 <form method = "POST" action ="/members">
+  <div class ="form_space">
   <label for ="first_name">First Name:</label>
-  <input id ="first_name" type="text" name = "first_name" />
-  <br />
+  <input class="new_form" id ="first_name" type="text" name = "first_name" />
 
+</div>
+<div class ="form_space">
   <label for ="last_name">Last Name:</label>
-  <input id = "last_name" type="text" name ="last_name"  />
-  <br />
+  <input class="new_form" id = "last_name" type="text" name ="last_name"  />
 
+</div>
+<div class ="form_space">
   <label for ="membership_type">Select a Membership level</label><br />
   <select id="membership_type" name="membership_type">
     <option value="Basic">Basic Membership</option>
     <option value="Premium">Premium Membership</option>
   </select>
-  <br />
 
+</div>
   <input class="new" type="submit" value"Submit New Member" />
-  <br />
+
 
 </form>

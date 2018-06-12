@@ -31,3 +31,16 @@ input{
 .show_member_form{
 	margin: 10px;
 }
+
+.new_form{
+	background-color: white;
+}
+
+form{
+	margin: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.form_space{
+	margin-bottom:  0.5em;
+}

@@ -13,7 +13,7 @@ def initialize(options)
   @cost = options['cost'].to_i
   @duration = options['duration'].to_i
   @class_time = options['class_time']
-  @capacity = options['capacity']ß
+  @capacity = options['capacity'].to_i
 end
 
   #Create a new class for the gym
