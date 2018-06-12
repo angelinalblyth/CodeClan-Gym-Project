@@ -2,16 +2,16 @@
 
   <label for ="first-name-field">First Name:</label>
   <input type ="text" name ="first_name" id="first-name-field" value ="<%= @member.first_name %>" />
-
+<br />
   <label for="last-name-field">Last Name:</label>
   <input type="text" name="last_name" id="last-name-field" value="<%= @member.last_name %>" />
-
+<br />
   <label for="membership_type"> Select your membership</label>
   <select name="membership_type" id="membership_type">
     <option value ="Basic" <%= "selected" if @member.membership_type == "Basic" %>> Basic</option>
     <option value ="Premium" <%= "selected" if @member.membership_type == "Premium" %>>Premium</option>
   </select>
-
+<br />
   <input type="submit" value ="Edit Member" />
 
 </form>
