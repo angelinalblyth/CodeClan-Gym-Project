@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  box-sizing: borderbox;
 }
 
 body{
@@ -17,28 +17,51 @@ h1{
   font-size: 5em;
 }
 
-#show-page{
+#showpage{
   text-align:left;
 }
 
 
 
-#view_members {
-  display: block;
-  width: 200px;
-  height: 200px;
-  background-image: url("/images/circuit training.jpg");
-  background-repeat: no-repeat;
-  padding: 50px;
+/* Boxes */
 
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+ }
+
+.container > div {
+  display: flex;
+  flex-basis: calc(50%  40px);
+  justify-content: center;
+  flex-direction: column;
+}
+.container > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
-#view_classes {
 
-  background-image: url('images/boxing.jpg');
+.box {
+  margin: 20px;
+}
 
+
+.responsive{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+ }
+
+figcaption{
+  color: white;
+  text-decoration: none;
+  text-align: center;
 }
-.image_link {
-  background-color: #000;
-  color: #fff;
-}
+
+a img{
+  text-decoration: none;
+ }
