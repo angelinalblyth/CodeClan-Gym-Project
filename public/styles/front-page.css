@@ -23,6 +23,9 @@ h1{
 
 /* Navigation */
 
+
+
+
 .nav-title{
   position: absolute;
   display:inline-block;
@@ -93,4 +96,8 @@ figcaption{
   color: white;
   text-decoration: none;
   text-align: center;
+}
+
+a img{
+  text-decoration: none;
 }

@@ -1,0 +1,95 @@
+home page - captions 'view all members' bigger and not fig captions.
+
+instead of edit users - be const change to member
+
+<a id="view_members" href=""><span class="image_link">View all members</span></a>
+
+#view_members {
+display: block;
+width: x;
+height: y;
+background-image: url('');
+background-repeat: no-repeat;
+padding: 50px;
+}
+
+.image_link {
+background-color: #000;
+color: #fff;
+}
+
+
+###TRIED THE BELOW AND IT DOESNT WORK
+
+#view_members {
+display: block;
+width: 200px;
+height: 200px;
+background-image: url("images/kettlebell.jpg");
+background-repeat: no-repeat;
+padding: 50px;
+border: solid 3px red;
+}
+
+#view_classes {
+display: block;
+width: 200px;
+height: 200px;
+background-image: url('images/boxing.jpg');
+background-repeat: no-repeat;
+padding: 50px;
+}
+.image_link {
+background-color: #000;
+color: #fff;
+}
+
+
+<a id="view_members" href="/members"><span class="image_link">View all members</span></a>
+
+<a id="view_classes" href="/gym_classes"><span class="image_link">View all classes</span></a>
+
+##### NAVIGATION
+
+<header>
+  <div id="brand">
+    <img>
+  </div>
+  <nav>
+    <ul>...</ul>
+  </nav>
+</header>
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+#brand {
+  display: block-inline;
+}
+nav {
+  display: block-inline;
+}
+
+
+##### None of the below work either
+
+
+<header>
+  <div id="brand">
+    <img src="/images/logo2-300x42.png" class = "logo" alt="Studio Logo"/>
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <a href="/">Dashboard</a>
+      </li>
+      <li>
+        <a href="/members">Members</a>
+      </li>
+      <li>
+        <a href="/gym_classes">Classes</a>
+      </li>
+  </ul>
+  </nav>
+</header>
