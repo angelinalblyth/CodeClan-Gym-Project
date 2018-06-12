@@ -1,3 +1,7 @@
+#new_booking{
+	float:none;
+}
+
 label {
 	float: left;
 	text-align: right;
@@ -35,6 +39,7 @@ input{
 .new_form{
 	background-color: white;
 }
+
 
 form{
 	margin: 0.5em;

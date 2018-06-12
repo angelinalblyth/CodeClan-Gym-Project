@@ -1,7 +1,7 @@
 <h1>Booking System</h1>
 
-<form action="/gym_classes/<%= @gym_class_id %>/bookings" method="post">
-  <label>
+<form  action="/gym_classes/<%= @gym_class_id %>/bookings" method="post">
+  <label id ="new_booking">
     Select a member:
     <select name="member_id">
       <% for member in @members %>
@@ -9,7 +9,7 @@
       <% end %>
     </select>
   </label>
-  <br />
+  <br /><br /><br /><br />
   <input type='submit' value="Add to class">
 </form>
 
