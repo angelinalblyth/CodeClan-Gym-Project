@@ -50,7 +50,9 @@ gymclass2 = GymClass.new({
   'description' => 'Circuit training, develop strength, cardio fitness, agility, balance and burn calories for long after with this varied workout tailored to suit your abilities.',
   'teacher' => 'Abigail Johnston',
   'cost' => '5',
-  'duration' => '60'
+  'duration' => '60',
+  'class_time' => '10:00',
+  'capacity' => '8'
   })
 gymclass2.save()
 
@@ -59,7 +61,9 @@ gymclass3 = GymClass.new({
   'description' => 'Focusing on both fitness and the technical aspects of the sport lifts (jerk, snatch, long cycle).',
   'teacher' => 'Abigail Johnston',
   'cost' => '7',
-  'duration' => '60'
+  'duration' => '60',
+  'class_time' => '10:00',
+  'capacity' => '8'
   })
 gymclass3.save()
 
@@ -68,7 +72,9 @@ gymclass4 = GymClass.new({
   'description' => 'Our Strength & Conditioning class is designed to help you develop your overall muscular strength and power. Whether you want to lose fat or build muscle working incorporating some strength work into your training can help you reach your goals! ',
   'teacher' => 'Meg Smith',
   'cost' => '7',
-  'duration' => '60'
+  'duration' => '60',
+  'class_time' => '10:00',
+  'capacity' => '8'
   })
 gymclass4.save()
 
