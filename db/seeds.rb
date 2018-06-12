@@ -41,7 +41,9 @@ gymclass1 = GymClass.new({
   'description' => 'Great way to get a workout in and learn some skills at the same time! Bag and pad work along with general conditioning and core strengthening.',
   'teacher' => 'Meg Smith',
   'cost' => '5',
-  'duration' => '60'
+  'duration' => '60',
+  'class_time' => '18:00',
+  'capacity' => '10'
   })
 gymclass1.save()
 
@@ -50,7 +52,9 @@ gymclass2 = GymClass.new({
   'description' => 'Circuit training, develop strength, cardio fitness, agility, balance and burn calories for long after with this varied workout tailored to suit your abilities.',
   'teacher' => 'Abigail Johnston',
   'cost' => '5',
-  'duration' => '60'
+  'duration' => '60',
+  'class_time' => '10:00',
+  'capacity' => '17:30'
   })
 gymclass2.save()
 
@@ -59,7 +63,9 @@ gymclass3 = GymClass.new({
   'description' => 'Focusing on both fitness and the technical aspects of the sport lifts (jerk, snatch, long cycle).',
   'teacher' => 'Abigail Johnston',
   'cost' => '7',
-  'duration' => '60'
+  'duration' => '60',
+  'class_time' => '12:00',
+  'capacity' => '12'
   })
 gymclass3.save()
 
@@ -68,7 +74,9 @@ gymclass4 = GymClass.new({
   'description' => 'Our Strength & Conditioning class is designed to help you develop your overall muscular strength and power. Whether you want to lose fat or build muscle working incorporating some strength work into your training can help you reach your goals! ',
   'teacher' => 'Meg Smith',
   'cost' => '7',
-  'duration' => '60'
+  'duration' => '60',
+  'class_time' => '10:00',
+  'capacity' => '2'
   })
 gymclass4.save()
 

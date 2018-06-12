@@ -16,7 +16,9 @@ CREATE TABLE gym_classes(
   description TEXT,
   teacher VARCHAR(255),
   cost INT4,
-  duration INT2
+  duration INT2,
+  class_time VARCHAR(255),
+  capacity INT2
 );
 
 CREATE TABLE bookings(
