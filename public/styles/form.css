@@ -5,6 +5,12 @@ label {
 	width: 100px;
 }
 
+.show_member_btn{
+  margin: 5px;
+ padding: 15px 32px;
+ display: inline-flex;
+}
+
 .new{
   margin-top: 50px;
 }
@@ -14,4 +20,14 @@ input{
   width: 250px;
   background-color:#2ABB9C;
   color: #262F38
+}
+
+.show_member_input{
+	width: 100px;
+	justify-content: space-around;
+
+}
+
+.show_member_form{
+	margin: 10px;
 }

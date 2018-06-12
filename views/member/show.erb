@@ -19,19 +19,21 @@
     </td>
   </tr>
 </table>
+<div class="show_member_btn">
+  <form class ="show_member_form" action="/members/<%= @member.id %>/edit">
+    <input class ="show_member_input" type="submit" value="Edit Member"/>
+  </form>
 
-<form  action="/members/<%= @member.id %>/edit">
-  <input type="submit" value="Edit Member"/>
-</form>
+  <form class ="show_member_form" method="post" action="/members/<%= @member.id %>/delete">
+    <input class ="show_member_input" type="submit" value="Delete Member"/>
+  </form>
 
-<form method="post" action="/members/<%= @member.id %>/delete">
-  <input type="submit" value="Delete Member"/>
-</form>
+  <form  class ="show_member_form" action="/members/<%= @member.id %>/bookings">
+    <input class ="show_member_input" type="submit" value="View Classes"/>
+  </form>
 
-<form  action="/members/<%= @member.id %>/bookings">
-  <input type="submit" value="View Classes"/>
-</form>
+  <form  class ="show_member_form" action="/members/<%= @member.id %>/bookings">
+    <input class ="show_member_input" type="submit" value="Book Class"/>
+  </form>
 
-<form  action="/members/<%= @member.id %>/bookings">
-  <input type="submit" value="Book Class"/>
-</form>
+</div>

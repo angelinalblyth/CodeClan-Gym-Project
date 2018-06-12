@@ -26,23 +26,23 @@
   </tr>
 </table>
 
-<div>
+<div class="show_member_btn">
 
-  <form  action="/gym_classes/<%= @gym_class.id %>/edit">
-    <input type="submit" value="Edit Class" class="boxing-buttons"/>
+  <form  class ="show_member_form" action="/gym_classes/<%= @gym_class.id %>/edit">
+    <input class ="show_member_input" type="submit" value="Edit Class" class="boxing-buttons"/>
   </form>
 
-  <form method="post" action="/gym_classes/<%= @gym_class.id %>/delete">
-    <input type="submit" value="Delete Class"/>
+  <form class ="show_member_form" method="post" action="/gym_classes/<%= @gym_class.id %>/delete">
+    <input class ="show_member_input" type="submit" value="Delete Class"/>
   </form>
 
   <!-- unsure if I will make 2 seperate files for both members and classes for this, or should they call on the same erb file to both book and view. -->
-  <form  action="/gym_classes/<%= @gym_class.id %>/bookings">
-    <input type="submit" value="View Members"/>
+  <form  class ="show_member_form" action="/gym_classes/<%= @gym_class.id %>/bookings">
+    <input class ="show_member_input" type="submit" value="View Members"/>
   </form>
 
-  <form  action="/gym_classes/<%= @gym_class.id %>/book_class">
-    <input type="submit" value="Book Member"/>
+  <form  class ="show_member_form" action="/gym_classes/<%= @gym_class.id %>/book_class">
+    <input class ="show_member_input" type="submit" value="Book Member"/>
   </form>
 
 </div>
