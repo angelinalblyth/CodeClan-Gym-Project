@@ -41,7 +41,9 @@ gymclass1 = GymClass.new({
   'description' => 'Great way to get a workout in and learn some skills at the same time! Bag and pad work along with general conditioning and core strengthening.',
   'teacher' => 'Meg Smith',
   'cost' => '5',
-  'duration' => '60'
+  'duration' => '60',
+  'class_time' => '18:00',
+  'capacity' => '10'
   })
 gymclass1.save()
 
@@ -52,7 +54,7 @@ gymclass2 = GymClass.new({
   'cost' => '5',
   'duration' => '60',
   'class_time' => '10:00',
-  'capacity' => '8'
+  'capacity' => '17:30'
   })
 gymclass2.save()
 
@@ -62,8 +64,8 @@ gymclass3 = GymClass.new({
   'teacher' => 'Abigail Johnston',
   'cost' => '7',
   'duration' => '60',
-  'class_time' => '10:00',
-  'capacity' => '8'
+  'class_time' => '12:00',
+  'capacity' => '12'
   })
 gymclass3.save()
 
@@ -74,7 +76,7 @@ gymclass4 = GymClass.new({
   'cost' => '7',
   'duration' => '60',
   'class_time' => '10:00',
-  'capacity' => '8'
+  'capacity' => '2'
   })
 gymclass4.save()
 

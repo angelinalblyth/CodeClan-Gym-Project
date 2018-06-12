@@ -15,6 +15,12 @@
   <label for="duration-field"> Duration:</label>
   <input type="text" name="duration" id="duration-field" value="<%= @gym_class.duration %>" />
 <br />
+<label for="time-field"> Time:</label>
+<input type="text" name="class_time" id="time-field" value="<%= @gym_class.class_time %>" />
+<br />
+<label for="capacity-field"> Capacity:</label>
+<input type="number" name="capacity" id="capacity-field" value="<%= @gym_class.capacity %>" />
+<br />
 <input type="submit" value="Edit Class" />
 
 </form>

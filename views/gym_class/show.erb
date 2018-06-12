@@ -13,15 +13,22 @@
 
 <table>
   <tr>
+
     <th>Teacher</th>
     <th>Cost</th>
     <th>Duration</th>
+    <th>Class Time</th>
+    <th>Capacity</th>
+    
   </tr>
+
   <tr>
 
     <td><%= @gym_class.teacher %></td>
     <td>£<%= @gym_class.cost %></td>
     <td><%= @gym_class.duration %> mins</td>
+    <td><%= @gym_class.class_time %></td>
+    <td><%= @gym_class.capacity %></td>
 
   </tr>
 </table>
