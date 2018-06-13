@@ -60,7 +60,7 @@ end
 
   #Method to return all members booked into a class
   def members()
-    sql = "SELECT * FROM gym_classes INNER JOIN bookings ON bookings.gym_class_id = gym_classes.id INNER JOIN members ON bookings.member_id = members.id WHERE gym_classes.id = $1"
+    sql = "SELECT members.* FROM members INNER JOIN bookings ON bookings.member_id = members.id INNER JOIN gym_classes ON bookings.gym_class_id = gym_classes.id WHERE gym_classes.id = $1"
     values = [@id]
     results = SqlRunner.run(sql, values)
     return results.map { |member| Member.new(member)}
