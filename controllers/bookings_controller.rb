@@ -23,6 +23,8 @@ end
 get '/gym_classes/:id/book_class' do
   @members = Member.all
   @gym_class_id = params[:id]
+  @signed_up = GymClass.find(params[:id]).members.map {|member| member.id}
+  
   erb(:"booking/new")
 end
 

@@ -5,7 +5,9 @@
     Select a member:
     <select name="member_id">
       <% for member in @members %>
+      <% if !@signed_up.include? member.id %>
       <option value="<%= member.id %>"><%= member.first_name %></option>
+      <% end %>
       <% end %>
     </select>
   </label>
