@@ -2,41 +2,41 @@
 
 <form method = "POST" action="/gym_classes/<%= @gym_class.id%>">
 
-<div class ="form_space">
-  <label for ="title-field">Title:</label>
-  <input class="new_form" type ="text" name ="title" id="title-field" value ="<%= @gym_class.title %>" />
-<br />
-</div>
-<div class ="form_space">
-  <label for="description-field">Description:</label>
-  <input class="new_form" type="text" name="description" id="description-field" value="<%= @gym_class.description %>" />
-<br />
-</div>
-<div class ="form_space">
-  <label for="teacher-field">Teacher:</label>
-  <input class="new_form" type="text" name="teacher" id="teacher-field" value="<%= @gym_class.teacher %>" />
-<br />
-</div>
-<div class ="form_space">
-  <label for="cost-field">Cost: £</label>
-  <input class="new_form" type="number" name="cost" id="cost-field" value="<%= @gym_class.cost %>" />
-<br />
-</div>
-<div class ="form_space">
-  <label for="duration-field"> Duration:</label>
-  <input class="new_form" type="text" name="duration" id="duration-field" value="<%= @gym_class.duration %>" />
-<br />
-</div>
-<div class ="form_space">
-<label for="time-field"> Time:</label>
-<input class="new_form" type="text" name="class_time" id="time-field" value="<%= @gym_class.class_time %>" />
-<br />
-</div>
-<div class ="form_space">
-<label for="capacity-field"> Capacity:</label>
-<input class="new_form" type="number" name="capacity" id="capacity-field" value="<%= @gym_class.capacity %>" />
-<br />
-</div>
-<input type="submit" value="Edit Class" />
+  <div class ="form_space">
+    <label for ="title-field">Title:</label>
+    <input class="new_form" type ="text" name ="title" id="title-field" value ="<%= @gym_class.title %>" />
+    <br />
+  </div>
+  <div class ="form_space">
+    <label for="description-field">Description:</label>
+    <input class="new_form" type="text" name="description" id="description-field" value="<%= @gym_class.description %>" />
+    <br />
+  </div>
+  <div class ="form_space">
+    <label for="teacher-field">Teacher:</label>
+    <input class="new_form" type="text" name="teacher" id="teacher-field" value="<%= @gym_class.teacher %>" />
+    <br />
+  </div>
+  <div class ="form_space">
+    <label for="cost-field">Cost: £</label>
+    <input class="new_form" type="number" name="cost" id="cost-field" value="<%= @gym_class.cost %>" />
+    <br />
+  </div>
+  <div class ="form_space">
+    <label for="duration-field"> Duration:</label>
+    <input class="new_form" type="text" name="duration" id="duration-field" value="<%= @gym_class.duration %>" />
+    <br />
+  </div>
+  <div class ="form_space">
+    <label for="time-field"> Time:</label>
+    <input class="new_form" type="text" name="class_time" id="time-field" value="<%= @gym_class.class_time %>" />
+    <br />
+  </div>
+  <div class ="form_space">
+    <label for="capacity-field"> Capacity:</label>
+    <input class="new_form" type="number" name="capacity" id="capacity-field" value="<%= @gym_class.capacity %>" />
+    <br />
+  </div>
+  <input type="submit" value="Edit Class" />
 
 </form>

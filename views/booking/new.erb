@@ -1,19 +1,19 @@
 <h1>Booking System</h1>
 <div>
 
-<form  action="/gym_classes/<%= @gym_class_id %>/bookings" method="post">
-  <label id ="new_booking">
-    Select a member:
-    <select name="member_id">
-      <% for member in @members %>
-      <% if !@signed_up.include? member.id %>
-      <option value="<%= member.id %>"><%= member.first_name %></option>
-      <% end %>
-      <% end %>
-    </select>
-  </label>
-  <br /><br /><br /><br />
-  <input class="button-forms" type='submit' value="Add to class">
-</form>
+  <form  action="/gym_classes/<%= @gym_class_id %>/bookings" method="post">
+    <label id ="new_booking">
+      Select a member:
+      <select name="member_id">
+        <% for member in @members %>
+        <% if !@signed_up.include? member.id %>
+        <option value="<%= member.id %>"><%= member.first_name %></option>
+        <% end %>
+        <% end %>
+      </select>
+    </label>
+    <br /><br /><br /><br />
+    <input class="button-forms" type='submit' value="Add to class">
+  </form>
 
 </div>

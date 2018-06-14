@@ -12,7 +12,7 @@ class Member
     @membership_type = options['membership_type']
   end
 
-#Create a new member of the gym
+  #Create a new member of the gym
   def save()
     sql = "INSERT INTO members(first_name, last_name, membership_type) VALUES ($1, $2, $3) RETURNING id"
     values = [@first_name, @last_name, @membership_type]

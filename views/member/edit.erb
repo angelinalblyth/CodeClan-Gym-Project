@@ -2,30 +2,30 @@
 
 <div style="margin: 5%;">
 
-<form method ="post" action="/members/<%=@member.id%>">
+  <form method ="post" action="/members/<%=@member.id%>">
 
 
-<div class ="form_space">
-  <label for ="first-name-field">First Name:</label>
-  <input class="new_form" type ="text" name ="first_name" id="first-name-field" value ="<%= @member.first_name %>" />
-<br />
-</div>
-<div class ="form_space">
-  <label for="last-name-field">Last Name:</label>
-  <input class="new_form" type="text" name="last_name" id="last-name-field" value="<%= @member.last_name %>" />
-<br />
-</div>
-<div class ="form_space">
-  <label for="membership_type"> Select your membership</label>
-  <select name="membership_type" id="membership_type">
-    <option value ="Basic" <%= "selected" if @member.membership_type == "Basic" %>> Basic</option>
-    <option value ="Premium" <%= "selected" if @member.membership_type == "Premium" %>>Premium</option>
-  </select>
-<br />
-</div>
-<div class ="form_space">
-  <input type="submit" value ="Edit Member" />
-</div>
-</form>
+    <div class ="form_space">
+      <label for ="first-name-field">First Name:</label>
+      <input class="new_form" type ="text" name ="first_name" id="first-name-field" value ="<%= @member.first_name %>" />
+      <br />
+    </div>
+    <div class ="form_space">
+      <label for="last-name-field">Last Name:</label>
+      <input class="new_form" type="text" name="last_name" id="last-name-field" value="<%= @member.last_name %>" />
+      <br />
+    </div>
+    <div class ="form_space">
+      <label for="membership_type"> Select your membership</label>
+      <select name="membership_type" id="membership_type">
+        <option value ="Basic" <%= "selected" if @member.membership_type == "Basic" %>> Basic</option>
+        <option value ="Premium" <%= "selected" if @member.membership_type == "Premium" %>>Premium</option>
+      </select>
+      <br />
+    </div>
+    <div class ="form_space">
+      <input type="submit" value ="Edit Member" />
+    </div>
+  </form>
 
 </div>
