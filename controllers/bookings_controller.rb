@@ -1,6 +1,5 @@
 require( 'sinatra' )
-require( 'sinatra/contrib/all' )
-require( 'pry-byebug' )
+require('sinatra/contrib/all') if development?
 require_relative( '../models/booking.rb' )
 require_relative( '../models/member.rb' )
 require_relative( '../models/gym_class.rb' )
@@ -24,7 +23,7 @@ get '/gym_classes/:id/book_class' do
   @members = Member.all
   @gym_class_id = params[:id]
   @signed_up = GymClass.find(params[:id]).members.map {|member| member.id}
-  
+
   erb(:"booking/new")
 end
 
