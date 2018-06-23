@@ -55,8 +55,10 @@ class Member
     SqlRunner.run(sql, values)
   end
 
-  # #Method to return all classes that member is signed up for
-
+  #Method to return all classes that member is signed up for
+  # SQL statement will return all class info, check the booking class id against the
+  # the members id when searching for the members id. Will need to be an inner join between
+  # bookings and gym clases
   def booked_classes()
     sql = "SELECT gym_classes.* FROM gym_classes INNER JOIN bookings ON bookings.gym_class_id = gym_classes.id INNER JOIN members ON bookings.member_id = members.id WHERE members.id = $1"
     values = [@id]
